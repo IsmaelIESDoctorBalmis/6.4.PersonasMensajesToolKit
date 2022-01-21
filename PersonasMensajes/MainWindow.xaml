@@ -21,7 +21,7 @@
         </StackPanel>
         <TextBlock DockPanel.Dock="Bottom" Margin="0,5,0,0">
             <Run Text="Version:"></Run>
-            <Run Text="{Binding Source={x:Static properties:Settings.Default}, Path=version}"></Run>
+            <Run Text="{Binding Source={x:Static properties:Settings.Default}, Path=version, Mode=OneWay}"></Run>
         </TextBlock>
         <Border BorderBrush="Black" BorderThickness="2">
             <ContentControl Content="{Binding Path=ContenidoVentana}"></ContentControl>
